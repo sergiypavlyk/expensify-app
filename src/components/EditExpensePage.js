@@ -17,7 +17,7 @@ const EditExpensePage = (props) => {
       </div>
       <div className="content-container">
         <ExpenseForm
-          expense={this.props.expense}
+          expense={props.expense}
           onSubmit={(expense) => {
             props.dispatch(startEditExpense(props.expense.id, expense));
             navigate('/');
